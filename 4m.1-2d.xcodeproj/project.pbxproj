@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		2ADD4FE52A48583F0088666A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FE42A48583F0088666A /* AppDelegate.swift */; };
 		2ADD4FE72A48583F0088666A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FE62A48583F0088666A /* SceneDelegate.swift */; };
-		2ADD4FE92A48583F0088666A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FE82A48583F0088666A /* ViewController.swift */; };
+		2ADD4FE92A48583F0088666A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FE82A48583F0088666A /* MainViewController.swift */; };
 		2ADD4FEC2A48583F0088666A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD4FEA2A48583F0088666A /* Main.storyboard */; };
 		2ADD4FEE2A4858410088666A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD4FED2A4858410088666A /* Assets.xcassets */; };
 		2ADD4FF12A4858410088666A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD4FEF2A4858410088666A /* LaunchScreen.storyboard */; };
+		2ADD4FFA2A4858CD0088666A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2ADD4FF92A4858CD0088666A /* SnapKit */; };
+		2ADD4FFC2A485D530088666A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FFB2A485D530088666A /* CustomTableViewCell.swift */; };
+		2ADD4FFE2A485DCC0088666A /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FFD2A485DCC0088666A /* ProductsModel.swift */; };
+		2ADD50002A4882130088666A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FFF2A4882130088666A /* ApiManager.swift */; };
+		2ADD50032A489C800088666A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2ADD50022A489C7F0088666A /* Kingfisher */; };
+		2ADD50072A48A5DE0088666A /* DetalisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD50062A48A5DE0088666A /* DetalisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2ADD4FE12A48583F0088666A /* 4m.1d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4m.1d.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ADD4FE12A48583F0088666A /* 4m.1-2d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "4m.1-2d.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD4FE42A48583F0088666A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADD4FE62A48583F0088666A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2ADD4FE82A48583F0088666A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2ADD4FE82A48583F0088666A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2ADD4FEB2A48583F0088666A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2ADD4FED2A4858410088666A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADD4FF02A4858410088666A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ADD4FF22A4858410088666A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ADD4FFB2A485D530088666A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		2ADD4FFD2A485DCC0088666A /* ProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModel.swift; sourceTree = "<group>"; };
+		2ADD4FFF2A4882130088666A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		2ADD50062A48A5DE0088666A /* DetalisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalisViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADD50032A489C800088666A /* Kingfisher in Frameworks */,
+				2ADD4FFA2A4858CD0088666A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +52,7 @@
 		2ADD4FD82A48583F0088666A = {
 			isa = PBXGroup;
 			children = (
-				2ADD4FE32A48583F0088666A /* 4m.1d */,
+				2ADD4FE32A48583F0088666A /* 4m.1-2d */,
 				2ADD4FE22A48583F0088666A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +60,35 @@
 		2ADD4FE22A48583F0088666A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2ADD4FE12A48583F0088666A /* 4m.1d.app */,
+				2ADD4FE12A48583F0088666A /* 4m.1-2d.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2ADD4FE32A48583F0088666A /* 4m.1d */ = {
+		2ADD4FE32A48583F0088666A /* 4m.1-2d */ = {
 			isa = PBXGroup;
 			children = (
+				2ADD4FFD2A485DCC0088666A /* ProductsModel.swift */,
+				2ADD4FFF2A4882130088666A /* ApiManager.swift */,
 				2ADD4FE42A48583F0088666A /* AppDelegate.swift */,
 				2ADD4FE62A48583F0088666A /* SceneDelegate.swift */,
-				2ADD4FE82A48583F0088666A /* ViewController.swift */,
+				2ADD4FE82A48583F0088666A /* MainViewController.swift */,
+				2ADD50062A48A5DE0088666A /* DetalisViewController.swift */,
 				2ADD4FEA2A48583F0088666A /* Main.storyboard */,
 				2ADD4FED2A4858410088666A /* Assets.xcassets */,
 				2ADD4FEF2A4858410088666A /* LaunchScreen.storyboard */,
 				2ADD4FF22A4858410088666A /* Info.plist */,
+				2ADD4FFB2A485D530088666A /* CustomTableViewCell.swift */,
 			);
-			path = 4m.1d;
+			path = "4m.1-2d";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2ADD4FE02A48583F0088666A /* 4m.1d */ = {
+		2ADD4FE02A48583F0088666A /* 4m.1-2d */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2ADD4FF52A4858410088666A /* Build configuration list for PBXNativeTarget "4m.1d" */;
+			buildConfigurationList = 2ADD4FF52A4858410088666A /* Build configuration list for PBXNativeTarget "4m.1-2d" */;
 			buildPhases = (
 				2ADD4FDD2A48583F0088666A /* Sources */,
 				2ADD4FDE2A48583F0088666A /* Frameworks */,
@@ -82,9 +98,13 @@
 			);
 			dependencies = (
 			);
-			name = 4m.1d;
+			name = "4m.1-2d";
+			packageProductDependencies = (
+				2ADD4FF92A4858CD0088666A /* SnapKit */,
+				2ADD50022A489C7F0088666A /* Kingfisher */,
+			);
 			productName = 4m.1d;
-			productReference = 2ADD4FE12A48583F0088666A /* 4m.1d.app */;
+			productReference = 2ADD4FE12A48583F0088666A /* 4m.1-2d.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2ADD4FDC2A48583F0088666A /* Build configuration list for PBXProject "4m.1d" */;
+			buildConfigurationList = 2ADD4FDC2A48583F0088666A /* Build configuration list for PBXProject "4m.1-2d" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,11 +131,15 @@
 				Base,
 			);
 			mainGroup = 2ADD4FD82A48583F0088666A;
+			packageReferences = (
+				2ADD4FF82A4858CD0088666A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2ADD50012A489C7F0088666A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 2ADD4FE22A48583F0088666A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2ADD4FE02A48583F0088666A /* 4m.1d */,
+				2ADD4FE02A48583F0088666A /* 4m.1-2d */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADD4FE92A48583F0088666A /* ViewController.swift in Sources */,
+				2ADD4FE92A48583F0088666A /* MainViewController.swift in Sources */,
+				2ADD4FFE2A485DCC0088666A /* ProductsModel.swift in Sources */,
 				2ADD4FE52A48583F0088666A /* AppDelegate.swift in Sources */,
+				2ADD4FFC2A485D530088666A /* CustomTableViewCell.swift in Sources */,
+				2ADD50002A4882130088666A /* ApiManager.swift in Sources */,
 				2ADD4FE72A48583F0088666A /* SceneDelegate.swift in Sources */,
+				2ADD50072A48A5DE0088666A /* DetalisViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 4m.1d/Info.plist;
+				INFOPLIST_FILE = "4m.1-2d/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 4m.1d/Info.plist;
+				INFOPLIST_FILE = "4m.1-2d/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,7 +365,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2ADD4FDC2A48583F0088666A /* Build configuration list for PBXProject "4m.1d" */ = {
+		2ADD4FDC2A48583F0088666A /* Build configuration list for PBXProject "4m.1-2d" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2ADD4FF32A4858410088666A /* Debug */,
@@ -346,7 +374,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2ADD4FF52A4858410088666A /* Build configuration list for PBXNativeTarget "4m.1d" */ = {
+		2ADD4FF52A4858410088666A /* Build configuration list for PBXNativeTarget "4m.1-2d" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2ADD4FF62A4858410088666A /* Debug */,
@@ -356,6 +384,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2ADD4FF82A4858CD0088666A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		2ADD50012A489C7F0088666A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2ADD4FF92A4858CD0088666A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2ADD4FF82A4858CD0088666A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		2ADD50022A489C7F0088666A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2ADD50012A489C7F0088666A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2ADD4FD92A48583F0088666A /* Project object */;
 }
