@@ -69,6 +69,7 @@ class DetalisViewController: UIViewController {
             make.top.equalTo(image.snp.bottom).offset(30)
             make.trailing.leading.equalToSuperview().inset(20)
         }
+        
     }
     
 }
