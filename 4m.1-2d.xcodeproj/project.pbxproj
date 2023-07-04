@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3C662A2A49DEFA001137E1 /* PostRequestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3C66292A49DEFA001137E1 /* PostRequestPage.swift */; };
 		2ADD4FE52A48583F0088666A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FE42A48583F0088666A /* AppDelegate.swift */; };
 		2ADD4FE72A48583F0088666A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FE62A48583F0088666A /* SceneDelegate.swift */; };
 		2ADD4FE92A48583F0088666A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADD4FE82A48583F0088666A /* MainViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A3C66292A49DEFA001137E1 /* PostRequestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestPage.swift; sourceTree = "<group>"; };
 		2ADD4FE12A48583F0088666A /* 4m.1-2d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "4m.1-2d.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD4FE42A48583F0088666A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADD4FE62A48583F0088666A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				2ADD4FEF2A4858410088666A /* LaunchScreen.storyboard */,
 				2ADD4FF22A4858410088666A /* Info.plist */,
 				2ADD4FFB2A485D530088666A /* CustomTableViewCell.swift */,
+				2A3C66292A49DEFA001137E1 /* PostRequestPage.swift */,
 			);
 			path = "4m.1-2d";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				2ADD4FFE2A485DCC0088666A /* ProductsModel.swift in Sources */,
 				2ADD4FE52A48583F0088666A /* AppDelegate.swift in Sources */,
 				2ADD4FFC2A485D530088666A /* CustomTableViewCell.swift in Sources */,
+				2A3C662A2A49DEFA001137E1 /* PostRequestPage.swift in Sources */,
 				2ADD50002A4882130088666A /* ApiManager.swift in Sources */,
 				2ADD4FE72A48583F0088666A /* SceneDelegate.swift in Sources */,
 				2ADD50072A48A5DE0088666A /* DetalisViewController.swift in Sources */,

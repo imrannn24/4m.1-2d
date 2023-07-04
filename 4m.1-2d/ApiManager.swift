@@ -15,7 +15,7 @@ class ApiManager{
         
         guard let url = URL(string: "https://dummyjson.com/products") else {return}
         
-        var request = URLRequest(url: url)
+        let request = URLRequest(url: url)
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             
@@ -30,4 +30,30 @@ class ApiManager{
         }
         task.resume()
     }
+    
+    func requestPostData(id: Int, title: String, price: Int, brand: String, category: String,
+                         completition: @escaping (Result<Int,Error>) -> Void) {
+        
+        guard let url = URL(string: "https://dummyjson.com/products/add") else {return}
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        
+        let product = [Product(id: 0, title: "", description: "", price: 0, discountPercentage: 0, rating: 0, stock: 0, brand: "", category: "", thumbnail: "", images: .init())]
+        
+        request.httpBody = try? JSONEncoder().encode(product)
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let response = response as? HTTPURLResponse else {return}
+            
+            do{
+                completition(.success((response.statusCode)))
+            } catch { 
+                completition(.failure(error))
+            }
+        }
+        task.resume()
+    }
+    
 }

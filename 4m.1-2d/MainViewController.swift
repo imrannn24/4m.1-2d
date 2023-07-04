@@ -23,11 +23,21 @@ class MainViewController: UIViewController {
         
         view.backgroundColor = .purple
         
+        let titleLabel = UILabel()
+        titleLabel.text = "CATALOG"
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 32)
+        titleLabel.adjustsFontSizeToFitWidth = true
+        navigationItem.titleView = titleLabel
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(openPostPage))
+        
         netWorking()
         tableViewSetting()
         setUpView()
         
     }
+    
+    
     
     private func netWorking(){
         
@@ -77,7 +87,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 360
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -86,6 +96,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         vc.product = catalogData[indexPath.row]
         
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func openPostPage(){
+        navigationController?.pushViewController(PostRequestPage(), animated: true)
     }
     
 }
