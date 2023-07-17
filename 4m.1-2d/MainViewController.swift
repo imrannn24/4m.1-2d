@@ -41,18 +41,33 @@ class MainViewController: UIViewController {
     
     private func netWorking(){
         
-        ApiManager.shared.requestData { result in
+        ApiManager.shared.universalRequest(type: .get) { result in
             switch result {
-            case .success(let value):
+            case .success(.model(let value)):
                 DispatchQueue.main.async {
                     self.catalogData = value.products ?? []
                     self.catalogTableView.reloadData()
                 }
             case .failure(let failure):
                 print(failure.localizedDescription)
+                
+            default: print("success")
             }
         }
+
         
+//        ApiManager.shared.requestData { result in
+//            switch result {
+//            case .success(let value):
+//                DispatchQueue.main.async {
+//                    self.catalogData = value.products ?? []
+//                    self.catalogTableView.reloadData()
+//                }
+//            case .failure(let failure):
+//                print(failure.localizedDescription)
+//            }
+//        }
+//        
     }
     
     func tableViewSetting(){

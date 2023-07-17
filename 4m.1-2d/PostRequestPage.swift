@@ -205,18 +205,16 @@ class PostRequestPage: UIViewController {
     @objc private func postRequest(){
         if idTF.text != "" && titleTF.text != "" && priceTF.text != "" && brandTF.text != "" && categoryTF.text != ""{
             postButton.backgroundColor = #colorLiteral(red: 0, green: 0.3269367218, blue: 0.5832633972, alpha: 1)
-            ApiManager.shared.requestPostData(id: Int(idTF.text ?? "") ?? 0,
-                                              title: titleTF.text ?? "",
-                                              price: Int(idTF.text ?? "") ?? 0,
-                                              brand: brandTF.text ?? "",
-                                              category: categoryTF.text ?? "") { result in
+            
+            ApiManager.shared.universalRequest(type: .post(id: Int(idTF.text ?? "") ?? 0, name: titleTF.text ?? "", price: Int(priceTF.text ?? "") ?? 0 , brand: brandTF.text ?? "", category: categoryTF.text ?? "" )) { result in
                 switch result {
-                case .success(let statusCode):
+                case.success(.statusCode(let code)):
                     DispatchQueue.main.async {
-                        self.showAllert(with: "Status Code", message: "Request Code\n\(statusCode) ")
+                        self.showAllert(with: "Status Code", message: "Request Code\n\(code) ")
                     }
-                case .failure(let failure):
+                case.failure(let failure):
                     print(failure.localizedDescription)
+                default: break
                 }
             }
         }

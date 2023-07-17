@@ -68,7 +68,7 @@ class DetalisViewController: UIViewController {
     lazy var addToCartBtn: UIButton = {
         let button = UIButton()
         button.addTarget(self, action: #selector(addToCart), for: .touchUpInside)
-        button.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
+        button.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.9568627477, blue: 0.9568627477, alpha: 1)
         button.setTitle("Add To Cart", for: .normal)
         button.titleLabel?.textColor = .white
         button.titleLabel?.font = .boldSystemFont(ofSize: 18)
